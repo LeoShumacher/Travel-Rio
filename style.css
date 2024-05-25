@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Lucida Sans";
+  color: white;
 }
 
 body {
   width: 100%;
   height: 100%;
-
 }
 
 nav {
@@ -16,56 +17,74 @@ nav {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 #main {
-    width: 100%;
-    height: 700px;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.01),
-      #002834
-    ),url("/assets/RIO.png");
-  
-  }
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), #002834),
+    url("/assets/RIO.png");
+}
 
 #wellcome {
-display: flex;
-width: 100%;
-padding-left: 50px;
+  display: flex;
+  width: 100%;
+  padding-left: 50px;
 }
 
 #bg-color {
-    width: 100%;
-    height: 600px;
-    background-color: #002834;
+  width: 100%;
+  height: 600px;
+  background-color: #002834;
 }
 
-#font1 { 
-    color: white;
-    font-family: "Lucida Sans";
-}
-#font2 { 
-    color: white;
-    font-family: "Lucida Sans";
-    font-weight: 900;
-    font-size: 200px;
+#font2 {
+  font-weight: 900;
+  font-size: 200px;
 }
 
 #message-cards {
-    width: 100%;
-    justify-content: center;
-    display: flex;
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
 
 #card-message {
-    width: 280px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    border-bottom: 1px solid white;
+  width: 320px;
+  height: 100px;
+  display: flex;
+  font-family: "Lucida Sans";
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+#card-message svg path {
+  fill: white;
+}
+
+#card-message:hover svg path {
+  fill: orange;
+  cursor: pointer;
 }
 
 #card-message:hover {
-    border-bottom: 1px solid orange;
-    cursor: pointer;
+  border-bottom: 1px solid orange;
+  cursor: pointer;
+}
+
+#notice {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+  width: 100%;
 }
