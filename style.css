@@ -27,13 +27,45 @@ nav {
   
   }
 
+#wellcome {
+display: flex;
+width: 100%;
+padding-left: 50px;
+}
+
 #bg-color {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: #002834;
 }
 
-.font { 
+#font1 { 
     color: white;
     font-family: "Lucida Sans";
+}
+#font2 { 
+    color: white;
+    font-family: "Lucida Sans";
+    font-weight: 900;
+    font-size: 200px;
+}
+
+#message-cards {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+#card-message {
+    width: 280px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#card-message:hover {
+    border-bottom: 1px solid orange;
+    cursor: pointer;
 }
